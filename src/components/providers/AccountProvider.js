@@ -4,7 +4,7 @@ const AccountContext = React.createContext()
 // Create an exportable consumer that can be injected into components
 export const AccountConsumer = AccountContext.Consumer
 // Create the provider using a traditional React.Component class
-class AccountProvider extends Component {
+class AccountProvider extends React.Component {
   state = {
     username: 'Crunchy Crunch',
     dateJoined: '9/1/18',
