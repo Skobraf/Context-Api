@@ -3,10 +3,10 @@ import {Fragment} from 'react';
 import AccountDetails from './AccountDetails';
 import AccountUpdate from './AccountUpdate';
 
-const AccountProfile = ({account: { username, dateJoined, membershipLevel } }) => (
+const AccountProfile = () => (
 	<Fragment>
-	<AccountDetails username={username} dateJoined={dateJoined} memebershipLevel={membershipLevel} />
-	<AccountUpdate username={username} membershipLevel={membershipLevel} />
+	<AccountDetails />
+	<AccountUpdate />
 	</Fragment>
 	)
 
