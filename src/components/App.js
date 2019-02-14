@@ -1,5 +1,6 @@
 import React from 'react';
-import { BrowserRouter as Router, Link } from 'react-router-dom';
+import {Fragment} from 'react';
+import { BrowserRouter as Router, Link, Switch, Route } from 'react-router-dom';
 import NavigationBar from './NavigationBar';
 import AccountProfile from './AccountProfile';
 
@@ -12,7 +13,7 @@ const account = {
 const App = () => (
 	<Router>
 		<Fragment>
-			<NavigationBar username={username} />
+			<NavigationBar username={account.username} />
 			<Switch>
 				<Route
 					exact

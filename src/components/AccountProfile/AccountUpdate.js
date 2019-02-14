@@ -21,7 +21,7 @@ class AccountUpdate extends React.Component {
 						<input
 							type="text"
 							name="username"
-							value={usernameValue}
+							value={username}
 							onChange={this.handleOnChange}
 						/>
 					</div>
