@@ -8,7 +8,14 @@ class AccountProvider extends React.Component {
   state = {
     username: 'Ayoub',
     dateJoined: '9/1/18',
-    membershipLevel: 'Silver'
+    membershipLevel: 'Silver',
+    updateAccount: updatedAccount => this.updateAccount(updatedAccount)
+  }
+  updatedAccount = updatedAccount => {
+    this.setState(prevState => ({
+      ...prevState,
+      ...updatedAccount
+    }))
   }
   render () {
     return (
